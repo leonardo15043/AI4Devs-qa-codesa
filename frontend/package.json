@@ -12,6 +12,7 @@
     "@types/react-dom": "^18.3.0",
     "bootstrap": "^5.3.3",
     "dotenv": "^16.4.5",
+    "frontend": "file:",
     "react": "^18.3.1",
     "react-beautiful-dnd": "^13.1.1",
     "react-bootstrap": "^2.10.2",
@@ -29,7 +30,10 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "jest --config jest.config.js",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "cypress:open": "cypress open",
+    "cypress:run": "cypress run",
+    "test:e2e": "cypress run"
   },
   "eslintConfig": {
     "extends": [
@@ -48,5 +52,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@types/cypress": "^0.1.6",
+    "cypress": "^14.2.1"
   }
 }
